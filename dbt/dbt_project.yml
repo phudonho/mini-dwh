@@ -1,0 +1,13 @@
+name: mini_dwh
+version: 1.0
+profile: mini_dwh
+
+model-paths: ["models"]
+models:
+  mini_dwh:
+    staging:
+      +materialized: view
+      +schema: stg
+    marts:
+      +materialized: table
+      +schema: mart

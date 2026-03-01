@@ -1,0 +1,11 @@
+mini_dwh:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: postgres
+      user: dwh
+      password: dwh
+      port: 5432
+      dbname: dwh
+      schema: analytics
